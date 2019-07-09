@@ -4,7 +4,7 @@
 
     <groupId>com.linagora</groupId>
     <artifactId>logback-elasticsearch-appender</artifactId>
-    <version>1.7-SNAPSHOT</version>
+    <version>1.8.0</version>
     <packaging>jar</packaging>
 
     <name>Logback Elasticsearch Appender</name>
