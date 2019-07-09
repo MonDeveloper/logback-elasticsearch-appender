@@ -1,16 +1,15 @@
 package com.linagora.logback.elasticsearch;
 
-import ch.qos.logback.core.UnsynchronizedAppenderBase;
-import com.internetitem.logback.elasticsearch.config.*;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import com.linagora.logback.elasticsearch.config.Authentication;
 import com.linagora.logback.elasticsearch.config.ElasticsearchProperties;
 import com.linagora.logback.elasticsearch.config.HttpRequestHeaders;
 import com.linagora.logback.elasticsearch.config.Settings;
 import com.linagora.logback.elasticsearch.util.ErrorReporter;
-
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.URL;
+import ch.qos.logback.core.UnsynchronizedAppenderBase;
 
 public abstract class AbstractElasticsearchAppender<T> extends UnsynchronizedAppenderBase<T> {
 

@@ -2,8 +2,6 @@ package com.linagora.logback.elasticsearch;
 
 import java.io.IOException;
 
-import ch.qos.logback.access.spi.IAccessEvent;
-import ch.qos.logback.core.Context;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.linagora.logback.elasticsearch.config.ElasticsearchProperties;
 import com.linagora.logback.elasticsearch.config.HttpRequestHeaders;
@@ -12,6 +10,8 @@ import com.linagora.logback.elasticsearch.config.Settings;
 import com.linagora.logback.elasticsearch.util.AbstractPropertyAndEncoder;
 import com.linagora.logback.elasticsearch.util.AccessPropertyAndEncoder;
 import com.linagora.logback.elasticsearch.util.ErrorReporter;
+import ch.qos.logback.access.spi.IAccessEvent;
+import ch.qos.logback.core.Context;
 
 public class AccessElasticsearchPublisher extends AbstractElasticsearchPublisher<IAccessEvent> {
 

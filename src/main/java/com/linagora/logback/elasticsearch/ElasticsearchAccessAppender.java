@@ -2,8 +2,8 @@ package com.linagora.logback.elasticsearch;
 
 import java.io.IOException;
 
-import ch.qos.logback.access.spi.IAccessEvent;
 import com.linagora.logback.elasticsearch.config.Settings;
+import ch.qos.logback.access.spi.IAccessEvent;
 
 public class ElasticsearchAccessAppender extends AbstractElasticsearchAppender<IAccessEvent> {
 

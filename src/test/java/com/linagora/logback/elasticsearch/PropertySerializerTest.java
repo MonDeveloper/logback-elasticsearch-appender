@@ -1,18 +1,19 @@
 package com.linagora.logback.elasticsearch;
 
-import ch.qos.logback.classic.spi.ILoggingEvent;
-import ch.qos.logback.core.Context;
-import com.fasterxml.jackson.core.JsonGenerator;
-import com.linagora.logback.elasticsearch.config.Property;
-import com.linagora.logback.elasticsearch.util.ClassicPropertyAndEncoder;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.verify;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.assertThat;
-import static org.mockito.Mockito.verify;
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.linagora.logback.elasticsearch.config.Property;
+import com.linagora.logback.elasticsearch.util.ClassicPropertyAndEncoder;
+import ch.qos.logback.classic.spi.ILoggingEvent;
+import ch.qos.logback.core.Context;
 
 @RunWith(MockitoJUnitRunner.class)
 public class PropertySerializerTest {

@@ -1,6 +1,13 @@
 package com.linagora.logback.elasticsearch;
 
-import ch.qos.logback.core.Context;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.linagora.logback.elasticsearch.config.ElasticsearchProperties;
@@ -12,14 +19,7 @@ import com.linagora.logback.elasticsearch.util.ErrorReporter;
 import com.linagora.logback.elasticsearch.writer.ElasticsearchWriter;
 import com.linagora.logback.elasticsearch.writer.LoggerWriter;
 import com.linagora.logback.elasticsearch.writer.StdErrWriter;
-
-import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
+import ch.qos.logback.core.Context;
 
 public abstract class AbstractElasticsearchPublisher<T> implements Runnable {
 

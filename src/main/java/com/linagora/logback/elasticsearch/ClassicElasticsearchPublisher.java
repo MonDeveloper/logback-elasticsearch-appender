@@ -1,10 +1,11 @@
 package com.linagora.logback.elasticsearch;
 
-import ch.qos.logback.classic.spi.ILoggingEvent;
-import ch.qos.logback.core.Context;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 import com.fasterxml.jackson.core.JsonGenerator;
-import com.internetitem.logback.elasticsearch.config.*;
-import com.internetitem.logback.elasticsearch.util.*;
 import com.linagora.logback.elasticsearch.config.ElasticsearchProperties;
 import com.linagora.logback.elasticsearch.config.HttpRequestHeaders;
 import com.linagora.logback.elasticsearch.config.Property;
@@ -12,9 +13,8 @@ import com.linagora.logback.elasticsearch.config.Settings;
 import com.linagora.logback.elasticsearch.util.AbstractPropertyAndEncoder;
 import com.linagora.logback.elasticsearch.util.ClassicPropertyAndEncoder;
 import com.linagora.logback.elasticsearch.util.ErrorReporter;
-
-import java.io.IOException;
-import java.util.*;
+import ch.qos.logback.classic.spi.ILoggingEvent;
+import ch.qos.logback.core.Context;
 
 
 public class ClassicElasticsearchPublisher extends AbstractElasticsearchPublisher<ILoggingEvent> {
