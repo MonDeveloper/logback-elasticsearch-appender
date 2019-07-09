@@ -25,9 +25,9 @@
     </organization>
 
     <scm>
-        <connection>scm:git:https://github.com/internetitem/logback-elasticsearch-appender.git</connection>
-        <developerConnection>scm:git:https://github.com/internetitem/logback-elasticsearch-appender.git</developerConnection>
-        <url>https://github.com/internetitem/logback-elasticsearch-appender</url>
+        <connection>scm:git:https://github.com/linagora/logback-elasticsearch-appender.git</connection>
+        <developerConnection>scm:git:https://github.com/linagora/logback-elasticsearch-appender.git</developerConnection>
+        <url>https://github.com/linagora/logback-elasticsearch-appender</url>
         <tag>HEAD</tag>
     </scm>
 
